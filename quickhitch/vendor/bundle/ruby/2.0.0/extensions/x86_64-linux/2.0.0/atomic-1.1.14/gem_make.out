@@ -1,0 +1,12 @@
+/home/phoenix/.rvm/rubies/ruby-2.0.0-p451/bin/ruby extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling atomic_reference.c
+linking shared-object atomic_reference.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 atomic_reference.so ./.gem.20140310-3145-1dbq6c1
+installing default atomic_reference libraries
