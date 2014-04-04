@@ -1,10 +1,10 @@
 
-<h1>
+<h1 style="margin: 50px 0 20px 0">
   <%= current_user.name %>
 </h1>
-<span>
-  <%= link_to "view my profile", current_user %>
-</span>
-<span>
+<div style="margin-bottom:50px">
+  <%= link_to "View My Profile", current_user, class: "link" %>
+</div>
+<div>
   <%= pluralize(current_user.conferences.count, "conference") %>
-</span>
+</div>

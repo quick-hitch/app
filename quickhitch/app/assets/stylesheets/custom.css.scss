@@ -3,11 +3,20 @@
 /* universal */
 
 html {
-  overflow-y: scroll;
+  color: white;
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 150px;
+  text-align: center;
+  overflow-y: scroll;
+  font-family: 'Helvetica Neue';
+  font-size: 25px;
+  color:white;
+  background: url('cabs.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 section {
@@ -29,21 +38,17 @@ textarea {
 /* header */
 
 #logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  line-height: 1;
+  color:white;
+  margin-top: 50px;
+  font-family: 'Lobster';
+  font-size: 80px;
+  cursor: pointer;
+  &:hover {
+    text-decoration:none;
+    background-color: transparent;
+  }
 }
 
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
-}
 
 /* forms */
 
@@ -69,4 +74,101 @@ input {
 .field_with_errors {
   @extend .control-group;
   @extend .error;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h1, h2 {
+  font-weight: normal;
+  margin: 0;
+}
+
+input {
+  padding: 10px;
+  width: 220px;
+  font-size:20px;
+}
+
+.container {
+  color: white;
+}
+
+#container {
+  font-family: 'Helvetica Neue';
+  font-size: 25px;
+  color:white;
+  padding: 100px 50px 100px 50px;
+  background: rgba(30, 30, 30, .8);
+  margin: 4% 5% 8% 5%;
+}
+
+#form {
+  display: none;
+}
+
+button, input[type='submit'], .button {
+  padding: 25px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Helvetica Neue';
+  border: 0;
+  background-color: #347CE0;
+  cursor: pointer;
+  margin: 80px 0 0 0;
+  &:hover {
+      text-decoration: none;
+      background-color: #347CE0;
+
+  }
+}
+
+.link {
+  color: white;
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.large {
+  font-size: 25px;
+}
+
+.small {
+  font-size: 20px;
+}
+
+.code {
+  font-weight: bold;
+  font-size:40px;
+}
+// http://stackoverflow.com/questions/13014808/is-there-anyway-to-animate-an-ellipsis-with-css-animations
+.one {
+  opacity: 0;
+  -webkit-animation: dot 1.3s infinite;
+  -webkit-animation-delay: 0.0s;
+}
+
+.two {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.2s;
+}
+
+.three {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.3s;
+}
+
+@-webkit-keyframes dot {
+      0% { opacity: 0; }
+     50% { opacity: 0; }
+    100% { opacity: 1; }
 }

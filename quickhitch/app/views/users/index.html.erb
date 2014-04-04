@@ -1,6 +1,6 @@
-<h1>Listing users</h1>
+<h2 style="margin: 50px 0 20px 0">Listing users</h2>
 
-<table>
+<table>  
   <thead>
     <tr>
       <th>Name</th>
@@ -17,10 +17,10 @@
       <tr>
         <td><%= user.name %></td>
         <td><%= user.email %></td>
-        <td><%= user.password_digest %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td style="font-size:10px"><%= user.password_digest %></td>
+        <td style="padding-right:5px"><%= link_to 'Show', user, class: "link" %> </td>
+        <td style="padding-right:5px"><%= link_to 'Edit', edit_user_path(user), class: "link" %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }, class: "link" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,6 @@
 
 <br>
 
-<%= link_to 'New User', new_user_path %>
+<%= link_to 'New User', new_user_path, class: "link" %>
+
+<br>

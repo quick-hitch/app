@@ -1,7 +1,7 @@
 <%= form_for(@conference) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
-  <div class="field">
+  <div class="field" style="width: 50%; margin: 0 auto; resize: none; margin-top: 10px;">
     <%= f.text_area :name, placeholder: "Compose new conference..." %>
   </div>
-  <%= f.submit "Post", class: "btn btn-large btn-primary" %>
+  <%= f.submit "Post", class: "button" %>
 <% end %>
