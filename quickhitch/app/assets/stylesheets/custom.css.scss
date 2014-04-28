@@ -112,6 +112,16 @@ input {
   display: none;
 }
 
+.alert, #error_explanation {
+  text-align: center;
+  margin: 0 auto;
+  list-style: none;
+}
+
+#user-info, #conference-form {
+  display: none;
+}
+
 button, input[type='submit'], .button {
   padding: 25px;
   color: white;

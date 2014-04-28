@@ -1,12 +1,12 @@
 <% if signed_in? %>
   <div class="row">
     <aside>
-      <!-- <section> -->
+      <div id='buttons'>
+        <button id='conference'>Create conference</button>
+        <button id='rider'>Find a ride!</button>
+      </div>
         <%= render 'shared/user_info' %>
-      <!-- </section> -->
-      <!-- <section> -->
         <%= render 'shared/conference_form' %>
-      <!-- </section> -->
     </aside>
   </div>
 <% else %>
