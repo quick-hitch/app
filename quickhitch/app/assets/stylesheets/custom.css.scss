@@ -63,6 +63,24 @@ input {
   height: auto !important;
 }
 
+#ampm {
+  width: 70px;
+  margin: -20px 0 0 10px;
+}
+
+#time-input {
+  width: 140px;
+}
+
+#ui-datepicker-div {
+  display: none;  
+}
+
+#riderInput {
+  input {
+    margin:10px 0 30px 0;
+  }
+}
 #error_explanation {
   color: #f00;
   ul {
@@ -105,7 +123,7 @@ input {
   color:white;
   padding: 100px 50px 100px 50px;
   background: rgba(30, 30, 30, .8);
-  margin: 4% 5% 8% 5%;
+  margin: 4% 5% 20% 5%;
 }
 
 #form {
@@ -134,8 +152,23 @@ button, input[type='submit'], .button {
   &:hover {
       text-decoration: none;
       background-color: #347CE0;
-
+      color: white;
   }
+}
+
+.little-button {
+  color: white;
+  font-size: 15px;
+  font-family: 'Helvetica Neue';
+  border: 0;
+  background-color: #347CE0;
+  cursor: pointer;
+  margin-top:10px;
+  &:hover {
+      text-decoration: none;
+      background-color: #347CE0;
+      color: white;
+  } 
 }
 
 .link {
@@ -182,3 +215,4 @@ button, input[type='submit'], .button {
      50% { opacity: 0; }
     100% { opacity: 1; }
 }
+
