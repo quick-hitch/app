@@ -32,8 +32,8 @@ $(function() {
 			changeYear : true
 		});
 		/*
-		 * Saves variables upon clicking 'search', and displays other users who have flights at
-		 * the same airport, on the same date.  
+		 * Saves variables upon clicking 'search', and displays other users who have the same conference
+		 * code and are arriving on the same date. 
 		 */
 		$(".search").on("click", function() {
 			var currDate = $('input[name="date"]').val().split("/");
@@ -45,7 +45,7 @@ $(function() {
 			var newUser = { name : "Signed-In User", date : currDate, time : currTime, confcode : currConfCode, airport : currAirport, flight : currFlightNo };
 			for (var i = 0; i < users.length; i++) {
 				var otherUser = users[i];
-				if (otherUser.date.getTime() == newUser.date.getTime() && otherUser.airport == newUser.airport) {
+				if (otherUser.date.getTime() == newUser.date.getTime() && otherUser.confcode == newUser.confcode) {
 					potentialRideSharers.push(otherUser);
 				}
 			}
